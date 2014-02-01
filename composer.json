@@ -1,0 +1,25 @@
+{
+    "name":"niborb/postcode-api-nu",
+    "description":"Postcode API library (postcodeapi.nu)",
+    "license":"MIT",
+    "autoload":{
+        "psr-0":{
+            "":"src/"
+        }
+    },
+    "require":{
+        "php":">=5.3.3",
+        "symfony/console": "2.4.*",
+        "guzzle/guzzle": "~3.7"
+
+    },
+    "require-dev":{
+        "phpspec/phpspec": "2.0.*@dev",
+        "henrikbjorn/phpspec-code-coverage" : "*"
+    },
+    "config":{
+        "bin-dir":"bin"
+    },
+    "minimum-stability":"dev"
+
+}
