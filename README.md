@@ -66,3 +66,8 @@ Output:
     Longitude: 5,07718
 
 
+### PHPSpec
+
+The library contains PHPSpec tests (./spec). To run:
+
+    vendor/bin/phpspec run
