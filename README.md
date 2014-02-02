@@ -48,3 +48,21 @@ Output:
     Latitude: 51,5664
     Longitude: 5,07718
 
+    Street: Wilhelminapark 
+    Postalcode: 5041EB
+    Town: Tilburg
+    Municipality: Tilburg
+    Province: Noord-Brabant
+    Latitude: 51,5663166667
+    Longitude: 5,0771925
+
+
+    Street: Wilhelminapark 21
+    Postalcode: 5041EB
+    Town: Tilburg
+    Municipality: Tilburg
+    Province: Noord-Brabant
+    Latitude: 51,5664
+    Longitude: 5,07718
+
+
