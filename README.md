@@ -1,4 +1,5 @@
 ## postcode-api-nu
+[![Build Status](https://travis-ci.org/niborb/postcode-api-nu.png?branch=master)](https://travis-ci.org/niborb/postcode-api-nu)
 ### PHP Library for the free Dutch Postcode API NU service: postcodeapi.nu
 
 ### Installation
