@@ -97,6 +97,9 @@ class DefaultClient implements PostcodeAPIClient
      */
     public function wgs84($latitude, $longitude)
     {
+        $longitude = number_format($longitude, 10, '.', '');
+        $latitude = number_format($latitude, 10, '.', '');
+
         $response = $this->callClient('wgs84/' . $latitude . ',' . $longitude);
 
         return $this->createApiResponseFromHttpResponse($response);

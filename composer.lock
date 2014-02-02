@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "376139895837a579652d7ce3065871b6",
+    "hash": "cc5bae66ee5b0808b4fc375e4e2bca56",
     "packages": [
         {
             "name": "guzzle/guzzle",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "028195b32bb2e096b168baebe07c704473db81d4"
+                "reference": "dce090bdeeea701bb95f68f2ea66b4e532c68207"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/028195b32bb2e096b168baebe07c704473db81d4",
-                "reference": "028195b32bb2e096b168baebe07c704473db81d4",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/dce090bdeeea701bb95f68f2ea66b4e532c68207",
+                "reference": "dce090bdeeea701bb95f68f2ea66b4e532c68207",
                 "shasum": ""
             },
             "require": {
@@ -95,7 +95,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-01-23 18:29:07"
+            "time": "2014-01-29 18:20:08"
         },
         {
             "name": "symfony/console",

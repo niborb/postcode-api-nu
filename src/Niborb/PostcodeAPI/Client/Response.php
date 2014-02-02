@@ -51,7 +51,6 @@ class Response
         $this->address = new Address();
         $this->address
             ->setStreet($data['resource']['street'])
-            ->setHouseNumber($data['resource']['house_number'])
             ->setPostcode($data['resource']['postcode'])
             ->setTown($data['resource']['town'])
             ->setMunicipality($data['resource']['municipality'])
@@ -61,6 +60,11 @@ class Response
             ->setXPos($data['resource']['x'])
             ->setYPos($data['resource']['y']);
 
+
+        // optional
+        if (array_key_exists('house_number', $data['resource'])) {
+            $this->address->setHouseNumber($data['resource']['house_number']);
+        }
     }
 
     /**

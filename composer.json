@@ -2,6 +2,13 @@
     "name":"niborb/postcode-api-nu",
     "description":"Postcode API library (postcodeapi.nu)",
     "license":"MIT",
+    "authors": [
+        {
+            "name": "Robin Breuker",
+            "email": "robin02@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "autoload":{
         "psr-0":{
             "":"src/"
@@ -17,9 +24,6 @@
         "phpspec/phpspec": "2.0.*@dev",
         "henrikbjorn/phpspec-code-coverage" : "*"
     },
-    "config":{
-        "bin-dir":"bin"
-    },
+    "bin": ["bin/postcodeapi.php"],
     "minimum-stability":"dev"
-
 }
