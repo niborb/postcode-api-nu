@@ -68,6 +68,6 @@ Output:
 
 ### PHPSpec
 
-The library contains PHPSpec tests (./spec). To run:
+The library contains PHPSpec tests (./spec). Clone the repository and run:
 
     vendor/bin/phpspec run
