@@ -11,7 +11,7 @@ use Niborb\PostcodeAPI\Client\Response;
 
 /**
  * Class PostcodeAPIClient
- * @package spec\Niborb\PostcodeAPI\Client
+ * @package Niborb\PostcodeAPI\Client
  */
 interface PostcodeAPIClient
 {

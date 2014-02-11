@@ -5,6 +5,7 @@ namespace spec\Niborb\PostcodeAPI;
 use Niborb\PostcodeAPI\Bag;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
+use Niborb\PostcodeAPI\Address;
 
 class AddressSpec extends ObjectBehavior
 {
@@ -52,6 +53,16 @@ class AddressSpec extends ObjectBehavior
     function it_should_be_able_to_set_municipality()
     {
         $this->setMunicipality('Tilburg')->getMunicipality()->shouldReturn('Tilburg');
+    }
+
+    function it_calculates_the_distance_to_another_address(Address $b)
+    {
+        $this->setLatitude(52.3747157);
+        $this->setLongitude(4.8986182);
+        $b->getLatitude()->willReturn(50.8577968);
+        $b->getLongitude()->willReturn(5.7009038);
+
+        $this->distanceToAddress($b)->shouldReturn(177.583);
     }
 
     function it_should_be_stringable()

@@ -97,4 +97,22 @@ class PostcodeAPI
 
         return $this->getAddressFromResponse($response);
     }
+
+    /**
+     * calculates the distance in KM between postcodeA and postcodeB
+     *
+     * @param string $postcodeA
+     * @param string $postcodeB
+     *
+     * @return float
+     */
+    public function getDistanceBetweenPostcodesInKM($postcodeA, $postcodeB)
+    {
+        $addressA = $this->client->postcode($postcodeA)->getAddress();
+        $addressB = $this->client->postcode($postcodeB)->getAddress();
+
+        return $addressA->distanceToAddress($addressB);
+    }
+
+
 }

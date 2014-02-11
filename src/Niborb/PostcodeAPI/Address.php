@@ -310,4 +310,44 @@ class Address
     }
 
 
+    /**
+     * @param Address $addressB
+     * @return float the distance in km
+     */
+    public function distanceToAddress(Address $addressB)
+    {
+        $longitudeA = $this->getLongitude();
+        $latitudeA = $this->getLatitude();
+
+        $longitudeB = $addressB->getLongitude();
+        $latitudeB = $addressB->getLatitude();
+
+        return $this->calculateDistanceInKm($longitudeA, $latitudeA, $longitudeB, $latitudeB);
+    }
+
+    /**
+     * @param $longitudeA
+     * @param $latitudeA
+     * @param $longitudeB
+     * @param $latitudeB
+     * @return float
+     */
+    private function calculateDistanceInKm($longitudeA, $latitudeA, $longitudeB, $latitudeB)
+    {
+        $pi80 = M_PI / 180;
+        $latitudeA *= $pi80;
+        $longitudeA *= $pi80;
+        $latitudeB *= $pi80;
+        $longitudeB *= $pi80;
+
+        $dlon = $longitudeB - $longitudeA;
+        $dlat = $latitudeB - $latitudeA;
+
+        $a = sin($dlat/2) * sin($dlat/2) + cos($latitudeA) * cos($latitudeB) * sin($dlon/2) * sin($dlon/2);
+        $c = 2 * atan2(sqrt($a), sqrt(1-$a));
+        $r = 6372.797; // radius of earth in KM
+        $d = $r * $c;
+
+        return round($d, 3);
+    }
 }
