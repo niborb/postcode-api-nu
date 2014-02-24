@@ -21,8 +21,7 @@
 
     },
     "require-dev":{
-        "phpspec/phpspec": "2.0.*@dev",
-        "henrikbjorn/phpspec-code-coverage" : "*"
+        "phpspec/phpspec": "2.0.*@dev"
     },
     "bin": ["bin/postcodeapi.php"],
     "minimum-stability":"dev"
